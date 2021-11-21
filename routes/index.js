@@ -213,6 +213,19 @@ router.get('/add-to-wish-officialmerch-admin/:id', (req, res) => {
     });
  });
 
-
+ router.get('/add-to-wish-officialmerch/:id', (req, res) => {
+    const productId = req.params.id;
+    const wish = new Wish(req.session.wish ? req.session.wish : {});
+ 
+    Product_officialmerch.findById(productId, function(err, product_officialmerch) {
+        if (err) {
+            return res.redirect('/officialmerch');
+        }
+        wish.add(product_officialmerch, product_officialmerch.id);
+        req.session.wish = wish;
+        console.log(req.session.wish);
+        res.redirect('/officialmerch');
+    });
+ });
 
 module.exports = router;

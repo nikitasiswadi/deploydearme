@@ -8,11 +8,11 @@ const router = express.Router();
 
 router.get('/', async(req, res) => {
     if (!req.session.wish) {
-        return res.render('pages/Wishlist', {products: 0});
+        return res.render('pages/wishlist', {products: 0});
     }
     var wish = new Wish(req.session.wish);
     console.log(wish);
-    res.render('pages/Wishlist', { products: wish.generateArray() });
+    res.render('pages/wishlist', { products: wish.generateArray() });
 })
 
 router.get('/remove-w/:id', (req, res, next) => {
