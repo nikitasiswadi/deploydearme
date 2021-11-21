@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css">
+    <script src="../js/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+
+    <title>DearMe | BTS Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!--fav-icon-->
+    <link rel="shortcut icon" href="images/Logo/DearMe-Fav-Logo.png">
+    <!--using-fontAwesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%- include('../../layouts/navbar_admin.ejs'); %>
+
+    <!---->
+    <div class="introduction">
+        <h1 style="text-align: center; margin-bottom: 30px;"><b>BTS</b></h1>
+        <h2>BTS : Members Profile and Details</h2>
+        <img src="/images/Idol/BTSConceptPhoto.jpg" class="rounded mx-auto d-block"
+        width="700px">
+        <p style="text-align: center;"><b>BTS (방탄소년단)</b> is a 7-member South Korean boy group under
+            <b>HYBE Labels</b> (formerly known as <i>Big Hit Entertainment</i>).<br>
+            BTS debuted on June 13, 2013 with the lead single ‘<i>No More Dream</i>‘ on album ‘<i>2 Cool 4 Skool</i>‘.<br>
+            The group consists of <a href="#rm" style="color: #00acb1; text-decoration: none;">RM</a>, 
+            <a href="#jin" style="color: #00acb1; text-decoration: none;">Jin</a>, 
+            <a href="#suga" style="color: #00acb1; text-decoration: none;">Suga</a>, 
+            <a href="#jhope" style="color: #00acb1; text-decoration: none;">J-Hope</a>, 
+            <a href="#jimin" style="color: #00acb1; text-decoration: none;">Jimin</a>, 
+            <a href="#v" style="color: #00acb1; text-decoration: none;">V</a>, and
+            <a href="#jungkook" style="color: #00acb1; text-decoration: none;">Jungkook</a>.
+        </p>
+
+        <p style="text-align: center;"><b>BTS Fandom Name:</b> A.R.M.Y (Adorable Representative MC for Youth)<br>
+            <b>BTS Official Light Stick Color:</b> Silver-Gray<br>
+            <b>BTS Fandom Color:</b> <span style="background-color: violet;">Purple</span> (Unofficial)<br>
+        </p>
+
+        <p style="text-align: center;"><b>BTS Current Dorm Arrangement (Since 2018):</b><br>
+            – RM, Jin, SUGA, V, Jung Kook (all single rooms)<br>
+            – J-Hope & Jimin (they have a bigger room, so they decided to share it)</p>
+            <p class="p1" style="text-align: center">
+                <p style="text-align: center"><strong>BTS Official Accounts:</strong><br />
+                    Instagram: <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank" rel="nofollow noopener" style="color: #00acb1; text-decoration: none;">@bts.bighitofficial</a><br />
+                    Twitter: <a href="https://twitter.com/bts_twt" target="_blank" rel="nofollow noopener" style="color: #00acb1; text-decoration: none;">@bts_twt</a><br />
+                    Facebook: <a href="https://www.facebook.com/bangtan.official/" target="_blank" rel="noopener nofollow" style="color: #00acb1; text-decoration: none;">bangtan.official</a><br />
+                    Official website: <a href="http://bts.ibighit.com" target="_blank" rel="noopener nofollow" style="color: #00acb1; text-decoration: none;">bts.ibighit.com</a><br />
+                    V Live: <a href="http://channels.vlive.tv/FE619/video" target="_blank" rel="noopener nofollow" style="color: #00acb1; text-decoration: none;">BTS channel</a><br />
+                    Official Fan Cafe: <a href="http://cafe.daum.net/BANGTAN" target="_blank" rel="noopener nofollow" style="color: #00acb1; text-decoration: none;">BANGTAN</a><br />
+                    TikTok: <a href="https://www.tiktok.com/@bts_official_bighit" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">@bts_official_bighit</a><br />
+                    Weverse: <a href="https://www.weverse.io/bts/artist" target="_blank" rel="noopener nofollow" style="color: #00acb1; text-decoration: none;">BTS</a></p><p style="text-align: center">
+            
+        <div class="member">
+            <h2 id="rm">RM</h2>
+            <img src="../images/Idol/BTS_RM.jpg" class="rounded mx-auto d-block" height="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #f28da6">Birth Name:</span> Kim Nam Joon (김남준)<br />
+                <span style="background-color: #f28da6">Position:</span> Leader, Main Rapper<br />
+                <span style="background-color: #f28da6">Birthday:</span> September 12, 1994<br />
+                <span style="background-color: #f28da6">Zodiac Sign:</span> Virgo<br />
+                <span style="background-color: #f28da6">Height:</span> 180 cm (5&#8217;11&#8221;)<br />
+                <span style="background-color: #f28da6">Weight:</span> 73.6 kg (162 lbs)<br />
+                <span style="background-color: #f28da6">Blood Type:</span> A<br />
+                <span style="background-color: #f28da6">MBTI Type:</span> ENFP (when he first took the test his result was INFP)<br />
+                <span style="background-color: #f28da6">Representative Emoji:</span> &#x1f428;<br />
+                <span style="background-color: #f28da6">RM&#8217;s Spotify List:</span>
+                    <a href="https://open.spotify.com/user/bighitktm/playlist/0brZe9voOPUysDkWVCOATf" target="_blank" rel="noopener nofollow" style="color: #00acb1; text-decoration: none;">RM&#8217;s Favorite Tracks</a><br />
+            </p>
+
+            <h2 id="jin">Jin</h2>
+            <img src="/images/Idol/BTS_Jin.jpg" class="rounded mx-auto d-block" height="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #cc99ff">Birth Name:</span> Kim Seok Jin (김석진)<br />
+                <span style="background-color: #cc99ff">Position:</span> Sub Vocalist, Visual<br />
+                <span style="background-color: #cc99ff">Birthday:</span> December 4, 1992<br />
+                <span style="background-color: #cc99ff">Zodiac Sign:</span> Sagittarius<br />
+                <span style="background-color: #cc99ff">Height:</span> 178.3 cm (5&#8217;10.2&#8243;)<br />
+                <span style="background-color: #cc99ff">Weight:</span> 63 kg (139 lbs)<br />
+                <span style="background-color: #cc99ff">Blood Type:</span> O<br />
+                <span style="background-color: #cc99ff">MBTI Type:</span> INTP<br />
+                <span style="background-color: #cc99ff">Representative Emoji:</span> &#x1f439;/&#x1f999;<br />
+                <span style="background-color: #cc99ff">Jin&#8217;s Spotify List:</span>
+                    <a href="https://open.spotify.com/user/bighitktm/playlist/3wcvwNITmfb6sC6MKEJVX9" target="_blank" rel="noopener nofollow" style="color: #00acb1; text-decoration: none;">Jin&#8217;s Favorite Tracks</a></p>
+            </p>
+
+            <h2 id="suga">Suga</h2>
+            <img src="/images/Idol/BTS_Suga.jpg" class="rounded mx-auto d-block" height="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #bccaf7">Full Name:</span> Min Yoon Gi (민윤기)<br />
+                <span style="background-color: #bccaf7">Position:</span> Lead Rapper<br />
+                <span style="background-color: #bccaf7">Birthday:</span> March 9, 1993<br />
+                <span style="background-color: #bccaf7">Zodiac Sign:</span> Pisces<br />
+                <span style="background-color: #bccaf7">Height:</span> 174 cm (5&#8217;8.5&#8243;)<br />
+                <span style="background-color: #bccaf7">Weight:</span> 59 kg (130 lbs)<br />
+                <span style="background-color: #bccaf7">Blood Type:</span> O<br />
+                <span style="background-color: #bccaf7">MBTI Type:</span> INTP (when he first took the test, his result was INFP)<br />
+                <span style="background-color: #bccaf7">Representative Emoji:</span> &#x1f431;<br />
+                <span style="background-color: #bccaf7">Suga&#8217;s Spotify List:</span>
+                    <a href="https://open.spotify.com/user/bighitktm/playlist/2FzWRo9ImvPMa7iAL9jCKF" target="_blank" rel="noopener nofollow"  style="color: #00acb1; text-decoration: none;">Suga&#8217;s Favorite Tracks</a>
+            </p>
+
+            <h2 id="jhope">J-Hope</h2>
+            <img src="/images/Idol/BTS_JHope.jpg" class="rounded mx-auto d-block" height="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #ffff00">Full Name:</span> Jung Ho Seok (정호석)<br />
+                <span style="background-color: #ffff00">Position:</span> Main Dancer, Sub Rapper, Sub Vocalist<br />
+                <span style="background-color: #ffff00">Birthday:</span> February 18, 1994<br />
+                <span style="background-color: #ffff00">Zodiac Sign:</span> Aquarius<br />
+                <span style="background-color: #ffff00">Height:</span> 177 cm (5&#8217;10&#8221;)<br />
+                <span style="background-color: #ffff00">Weight:</span> 65 kg (143 lbs)<br />
+                <span style="background-color: #ffff00">Blood Type:</span> A<br />
+                <span style="background-color: #ffff00">MBTI Type:</span> ESFJ<br />
+                <span style="background-color: #ffff00">Representative Emoji:</span> &#x1f31e;/&#x1f43f;&#xfe0f;<br />
+                <span style="background-color: #ffff00">J-Hope&#8217;s Spotify List:</span>
+                    <a href="https://open.spotify.com/user/bighitktm/playlist/6KdDdkjD5I3ObRqrc4TKNt" target="_blank" rel="noopener nofollow"  style="color: #00acb1; text-decoration: none;">J-Hope&#8217;s Favorite Tracks</a>
+            </p>
+
+            <h2 id="jimin">Jimin</h2>
+            <img src="/images/Idol/BTS_Jimin.jpg" class="rounded mx-auto d-block" height="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #e48cff">Full Name:</span> Park Ji Min (박지민)<br />
+                <span style="background-color: #e48cff">Position:</span> Main Dancer, Lead Vocalist<br />
+                <span style="background-color: #e48cff">Birthday:</span> October 13, 1995<br />
+                <span style="background-color: #e48cff">Zodiac Sign:</span> Libra<br />
+                <span style="background-color: #e48cff">Height:</span> 174 cm (5&#8217;8.5&#8243;)<br />
+                <span style="background-color: #e48cff">Weight:</span> 58.6 kg (129 lbs)<br />
+                <span style="background-color: #e48cff">Blood Type:</span> A<br />
+                <span style="background-color: #e48cff">MBTI Type:</span> ENFJ<br />
+                <span style="background-color: #e48cff">Representative Emoji:</span> &#x1f423;/&#x1f425;<br />
+                <span style="background-color: #e48cff">Jimin&#8217;s Spotify List:</span>
+                    <a href="https://open.spotify.com/user/bighitktm/playlist/4RK2A6ql5PuWMLI76LapY9" target="_blank" rel="noopener nofollow"  style="color: #00acb1; text-decoration: none;">Jimin&#8217;s Favorite Tracks</a></p>
+
+            <h2 id="v">V</h2>
+            <img src="/images/Idol/BTS_V.jpg" class="rounded mx-auto d-block" height="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #f7bec5">Full Name:</span> Kim Tae Hyung (김태형)<br />
+                <span style="background-color: #f7bec5">Position:</span> Lead Dancer, Sub Vocalist, Visual<br />
+                <span style="background-color: #f7bec5">Birthday:</span> December 30, 1995<br />
+                <span style="background-color: #f7bec5">Zodiac Sign:</span> Capricorn<br />
+                <span style="background-color: #f7bec5">Height:</span> 178.8 cm (5’10.4&#8243;)<br />
+                <span style="background-color: #f7bec5">Weight:</span> 63 kg (139 lbs)<br />
+                <span style="background-color: #f7bec5">Blood Type:</span> AB<br />
+                <span style="background-color: #f7bec5">MBTI Type:</span> ENFP<br />
+                <span style="background-color: #f7bec5">Representative Emoji:</span> &#x1f43b;/&#x1f42f;<br />
+                <span style="background-color: #f7bec5">V&#8217;s Spotify List:</span>
+                    <a href="https://open.spotify.com/user/bighitktm/playlist/2nKFSE6yJw9Xh2uDKzwmZb" target="_blank" rel="noopener nofollow"  style="color: #00acb1; text-decoration: none;">V&#8217;s Favorite Tracks</a>
+            </p>
+
+            <h2 id="jungkook">Jungkook</h2>
+            <img src="/images/Idol/BTS_Jungkook.jpg" class="rounded mx-auto d-block" height="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #916fed">Full Name:</span> Jeon Jung Kook (전정국)<br />
+                <span style="background-color: #916fed">Position:</span> Main Vocalist, Lead Dancer, Sub Rapper, Center, Maknae<br />
+                <span style="background-color: #916fed">Birthday:</span> September 1, 1997<br />
+                <span style="background-color: #916fed">Zodiac Sign:</span> Virgo<br />
+                <span style="background-color: #916fed">Height:</span> 178 cm (5&#8217;10&#8221;)<br />
+                <span style="background-color: #916fed">Weight:</span> 66 kg (145 lbs)<br />
+                <span style="background-color: #916fed">Blood Type:</span> A<br />
+                <span style="background-color: #916fed">MBTI Type:</span> ISFP<br />
+                <span style="background-color: #916fed">Representative Emoji:</span> &#x1f430;<br />
+                <span style="background-color: #916fed">Jungkook&#8217;s Spotify List:</span>
+                    <a href="https://open.spotify.com/user/bighitktm/playlist/59b6qZDNJI2ZfhqZFMaU6R" target="_blank" rel="noopener nofollow"  style="color: #00acb1; text-decoration: none;">Jungkook&#8217;s Favorite Tracks</a>
+            </p>
+
+        </div>
+
+    </div>
+    <%- include('../../layouts/footer.ejs'); %>
+</body>
+</html>

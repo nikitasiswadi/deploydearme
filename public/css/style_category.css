@@ -1,0 +1,118 @@
+* {
+    color: #252525;
+}
+
+h2 {
+    font-weight: 600;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.far {
+    color: white;
+}
+
+.fas {
+    color: white;
+}
+
+.fab {
+    color: white;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: white;
+}
+
+body {
+    background-color: whitesmoke;
+    padding-top: 7%;
+}
+
+.input-field {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.badge {
+    margin-left: 15px;
+}
+
+.row {
+    margin: 25px;
+}
+
+.alert {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.categories {
+    margin: 25px;
+}
+
+.categories h3 {
+    text-align: center;
+}
+
+#carouselExampleIndicators {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.card-footer{
+    color: #00acb1;
+    text-decoration: none;
+}
+
+.alert {
+    margin: 25px;
+}
+
+footer {
+    background-color: #252525;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    color: white;
+}
+
+footer td {
+    color: white;
+}
+
+footer th {
+    color: white;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
+.col a {
+    text-decoration: none;
+}
+
+.card-footer a{
+    text-decoration: underline;
+}
+
+/*.footer h3 {
+    color: white;
+    text-align: left;
+}
+
+.footer p {
+    color: white;
+}*/

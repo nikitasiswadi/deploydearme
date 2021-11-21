@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css">
+    <script src="../js/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+
+    <title>DearMe | The Boyz Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!--fav-icon-->
+    <link rel="shortcut icon" href="images/Logo/DearMe-Fav-Logo.png">
+    <!--using-fontAwesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%- include('../../layouts/navbar_admin.ejs'); %>
+
+    <!---->
+    <div class="introduction">
+        <h1 style="text-align: center; margin-bottom: 30px;"><b>THE BOYZ</b></h1>
+        <h2>The Boyz : Members Profile and Details</h2>
+        <img src="/images/Idol/TheBoyzThrillRideKickConceptPhoto.jpg" class="rounded mx-auto d-block"
+        width="700px">
+        <p style="text-align: center;"><b>The Boyz (더보이즈)</b> is a 11-member South Korean boy group under
+            <b>Cre.Ker Entertainment</b>.<br>
+            The Boyz debuted on December 6th, 2017.<br>
+            The group consists of <a href="#sangyeon" style="color: #00acb1; text-decoration: none;">Sangyeon</a>, 
+            <a href="#jacob" style="color: #00acb1; text-decoration: none;">Jacob</a>, 
+            <a href="#younghoon" style="color: #00acb1; text-decoration: none;">Younghoon</a>, 
+            <a href="#hyunjae" style="color: #00acb1; text-decoration: none;">Hyunjae</a>, 
+            <a href="#juyeon" style="color: #00acb1; text-decoration: none;">Juyeon</a>, 
+            <a href="#kevin" style="color: #00acb1; text-decoration: none;">Kevin</a>, 
+            <a href="#new" style="color: #00acb1; text-decoration: none;">New</a>, 
+            <a href="#q" style="color: #00acb1; text-decoration: none;">Q</a>,
+            <a href="#haknyeon" style="color: #00acb1; text-decoration: none;">Haknyeon</a>,
+            <a href="#sunwoo" style="color: #00acb1; text-decoration: none;">Sunwoo</a>, and 
+            <a href="#eric" style="color: #00acb1; text-decoration: none;">Eric</a>. 
+            <br><a href="#hwall" style="color: #00acb1; text-decoration: none;">Hwall</a> departed from the group on October 22nd, 2019.
+        </p>
+
+        <p style="text-align: center;">The Boyz Fandom Name: THE B (Pronounced in Korean as Deo Bi)<br>
+            The Boyz Official Colors: –
+        </p>
+
+        <p style="text-align: center;">The Boyz Current Dorm Arrangement (2 separate dorms) – As of January 2021:<br>
+            – Sunwoo and Kevin<br>
+            – Sangyeon and Haknyeon<br>
+            – Eric and Younghoon<br>
+            – Juyeon; Jacob; Hyunjae; Q; New (each have a separate room)</p>
+            <p class="p1" style="text-align: center">
+                <b>The Boyz Official Sites:</b><br />
+                Official Website (Japan): <a href="https://theboyz.jp/s/n61/?ima=5545" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">theboyz.jp</a><br />
+                Facebook: <a href="https://www.facebook.com/officialTHEBOYZ" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">officialTHEBOYZ</a><br />
+                Twitter: <a href="https://twitter.com/Creker_THEBOYZ" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">@Creker_THEBOYZ</a> / <a href="https://twitter.com/we_the_boyz" target="_blank" rel="nofollow"  style="color: #00acb1; text-decoration: none;">@we_the_boyz</a><br />
+                Twitter (Japan): <a href="https://twitter.com/THEBOYZJAPAN" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">@THEBOYZJAPAN</a><br />
+                Instagram: <a href="https://www.instagram.com/official_theboyz/" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">official_theboyz<br /></a>
+                Youtube: <a href="https://www.youtube.com/channel/UCkJ1rbOrsyPfBuHNfnLPm-Q" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">THE BOYZ<br /></a>
+                V LIVE: <a href="http://channels.vlive.tv/DE341F/video" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">THE BOYZ</a><br />
+                Official Fan Cafe: <a href="http://cafe.daum.net/officialTHEBOYZ" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">더보이즈(THE BOYZ) 공식 팬카페</a><br />
+                TikTok: <a href="https://www.tiktok.com/@creker_theboyz" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">@creker_theboyz</a></p>
+            
+        <div class="member">
+            <h2 id="sangyeon">Sangyeon</h2>
+            <img src="/images/Idol/TheBoyKick_Sangyeon.jpg" class="rounded mx-auto d-block" width="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #f55858">Stage Name:</span> Sangyeon (상연)<br>
+                <span style="background-color: #f55858">Birth Name: </span>Lee Sang Yeon (이상연)<br>
+                <span style="background-color: #f55858">Position:</span> Leader, Main Vocalist<br>
+                <span style="background-color: #f55858">Birthday:</span> November 4, 1996<br>
+                <span style="background-color: #f55858">Zodiac Sign:</span> Scorpio<br>
+                <span style="background-color: #f55858">Height:</span> 176 cm (5’9&#8243;)<br>
+                <span style="background-color: #f55858">Weight:</span> 61 kg (134 lbs)<br>
+                <span style="background-color: #f55858">Blood Type:</span> A<br>
+                <span style="background-color: #f55858">MBTI Type:</span> ESFP-T<br>
+                <span style="background-color: #f55858">Nationality:</span> Korean
+            </p>
+
+            <h2 id="jacob">Jacob</h2>
+            <img src="/images/Idol/TheBoyKick_Jacob.jpg" class="rounded mx-auto d-block" width="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #ffff00">Stage Name:</span> Jacob (제이콥)<br>
+                <span style="background-color: #ffff00">Birth Name:</span> Jacob Bae (배제이콥)<br>
+                <span style="background-color: #ffff00">Korean Name:</span> Bae Joon Young (배준영)<br>
+                <span style="background-color: #ffff00">Position:</span> Lead Vocalist<br>
+                <span style="background-color: #ffff00">Birthday:</span> May 30, 1997<br>
+                <span style="background-color: #ffff00">Zodiac Sign:</span> Gemini<br>
+                <span style="background-color: #ffff00">Height:</span> 175 cm (5’9&#8243;)<br>
+                <span style="background-color: #ffff00">Weight:</span> 60 kg (132 lbs)<br>
+                <span style="background-color: #ffff00">Blood Type:</span> B<br>
+                <span style="background-color: #ffff00">MBTI Type:</span> INFP-T<br>
+                <span style="background-color: #ffff00">Nationality:</span> Canadian
+            </p>
+
+            <h2 id="younghoon">Younghoon</h2>
+            <img src="/images/Idol/TheBoyKick_Younghoon.jpg" class="rounded mx-auto d-block" height="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #c6dff7">Stage Name:</span> Younghoon (영훈)<br>
+                <span style="background-color: #c6dff7">Birth Name:</span> Kim Young Hoon (김영훈)<br>
+                <span style="background-color: #c6dff7">Position:</span> Vocalist, Visual<br>
+                <span style="background-color: #c6dff7">Birthday:</span> August 8, 1997<br>
+                <span style="background-color: #c6dff7">Zodiac Sign:</span> Leo<br>
+                <span style="background-color: #c6dff7">Height:</span> 183 cm (6’0&#8243;)<br>
+                <span style="background-color: #c6dff7">Weight:</span> 61 kg (134 lbs)<br>
+                <span style="background-color: #c6dff7">Blood Type:</span> A<br>
+                <span style="background-color: #c6dff7">MBTI Type:</span> INFP-T<br>
+                <span style="background-color: #c6dff7">Nationality:</span> Korean
+                </p>
+
+            <h2 id="hyunjae">Hyunjae</h2>
+            <img src="/images/Idol/TheBoyKick_Hyunjae.jpg" class="rounded mx-auto d-block" height="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #cccccc">Stage Name:</span> Hyunjae (현재)<br>
+                <span style="background-color: #cccccc">Birth Name:</span> Lee Jae Hyun (이재현)<br>
+                <span style="background-color: #cccccc">Position:</span> Lead Vocalist, Lead Dancer, Visual<br>
+                <span style="background-color: #cccccc">Birthday:</span> September 13, 1997<br>
+                <span style="background-color: #cccccc">Zodiac Sign:</span> Virgo<br>
+                <span style="background-color: #cccccc">Height:</span> 179.7cm (5’11&#8243;)<br>
+                <span style="background-color: #cccccc">Weight:</span> 62 kg (137 lbs)<br>
+                <span style="background-color: #cccccc">Blood Type:</span> B<br>
+                <span style="background-color: #cccccc">MBTI Type:</span> ENFJ-A<br>
+                <span style="background-color: #cccccc">Nationality:</span> Korean
+            </p>
+
+            <h2 id="juyeon">Juyeon</h2>
+            <img src="/images/Idol/TheBoyKick_Juyeon.jpg" class="rounded mx-auto d-block" width="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #61b3d4">Stage Name:</span> Juyeon (주연)<br />
+                <span style="background-color: #61b3d4">Birth Name:</span> Lee Ju Yeon (이주연)<br />
+                <span style="background-color: #96bdcc"><span style="background-color: #61b3d4">Position</span>:</span> Main Dancer, Vocalist, Visual<br />
+                <span style="background-color: #61b3d4">Birthday:</span> January 15, 1998<br />
+                <span style="background-color: #61b3d4">Zodiac Sign:</span> Capricorn<br />
+                <span style="background-color: #61b3d4">Height:</span> 181 cm (5’11&#8243;)<br />
+                <span style="background-color: #61b3d4">Weight:</span> 62 kg (136 lbs)<br />
+                <span style="background-color: #61b3d4">Blood Type:</span> AB<br />
+                <span style="background-color: #61b3d4">MBTI Type:</span> ENTP-T<br />
+                <span style="background-color: #61b3d4">Nationality:</span> Korean
+            </p>
+
+            <h2 id="kevin">Kevin</h2>
+            <img src="/images/Idol/TheBoyKick_Kevin.jpg" class="rounded mx-auto d-block" width="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #f2bb4e">Stage Name:</span> Kevin (케빈)<br />
+                <span style="background-color: #f2bb4e">Birth Name:</span> Kevin Moon (케빈 문)<br />
+                <span style="background-color: #f2bb4e">Korean Name:</span> Moon Hyung Seo (문형서)<br />
+                <span style="background-color: #f2bb4e">Position:</span> Main Vocalist<br />
+                <span style="background-color: #f2bb4e">Birthday:</span> February 23, 1998<br />
+                <span style="background-color: #f2bb4e">Zodiac Sign:</span> Pisces<br />
+                <span style="background-color: #f2bb4e">Height:</span> 176 cm (5’9&#8243;)<br />
+                <span style="background-color: #f2bb4e">Weight:</span> 56 kg (123 lbs)<br />
+                <span style="background-color: #f2bb4e">Blood Type:</span> AB<br />
+                <span style="background-color: #f2bb4e">MBTI Type:</span> INFP-T<br />
+                <span style="background-color: #f2bb4e">Nationality:</span> Korean-Canadian
+            </p>
+
+            <h2 id="new">New</h2>
+            <img src="/images/Idol/TheBoyKick_New.jpg" class="rounded mx-auto d-block" width="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #ede4e8">Stage Name:</span> New (뉴)<br />
+                <span style="background-color: #ede4e8">Birth Name:</span> Choi Chan Hee (최찬희)<br />
+                <span style="background-color: #ede4e8">Position:</span> Main Vocalist<br />
+                <span style="background-color: #ede4e8">Birthday:</span> April 26, 1998<br />
+                <span style="background-color: #ede4e8">Zodiac Sign:</span> Taurus<br />
+                <span style="background-color: #ede4e8">Height:</span> 177 cm (5&#8217;10&#8221;)<br />
+                <span style="background-color: #ede4e8">Weight:</span> 51 kg (112 lbs)<br />
+                <span style="background-color: #ede4e8">Blood Type:</span> B<br />
+                <span style="background-color: #ede4e8">MBTI Type:</span> INFP-T<br />
+                <span style="background-color: #ede4e8">Nationality: </span>Korean
+            </p>
+
+            <h2 id="q">Q</h2>
+            <img src="/images/Idol/TheBoyKick_Q.jpg" class="rounded mx-auto d-block" width="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #ffffff">Stage Name:</span></strong> Q (큐)<br />
+                <span style="background-color: #ffffff">Birth Name:</span></strong> Ji Chang Min (지창민)<br />
+                <span style="background-color: #ffffff">Position:</span></strong> Main Dancer, Vocalist<br />
+                <span style="background-color: #ffffff">Birthday:</span></strong> November 5, 1998<br />
+                <span style="background-color: #ffffff">Zodiac Sign:</span></strong> Scorpio<br />
+                <span style="background-color: #ffffff">Height:</span></strong> 175 cm (5’9&#8243;)<br />
+                <span style="background-color: #ffffff">Weight:</span> 56 kg (123 lbs)<br />
+                <span style="background-color: #ffffff">Blood Type:</span></strong> AB<br />
+                <span style="background-color: #ffffff">MBTI Type:</span></strong> ESFP-T<br />
+                <span style="background-color: #ffffff">Nationality:</span></strong> Korean
+            </p>
+
+            <h2 id="haknyeon">Haknyeon</h2>
+            <img src="/images/Idol/TheBoyKick_Haknyeon.jpg" class="rounded mx-auto d-block" width="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #f67c07">Stage Name:</span> Juhaknyeon (주학년)<br />
+                <span style="background-color: #f67c07">Birth Name:</span> Ju Hak Nyeon (주학년)<br />
+                <span style="background-color: #f67c07">Chinese Name:</span> Zhou He Nian (周鹤年)<br />
+                <span style="background-color: #f67c07">Position:</span> Lead Dancer, Vocalist, Rapper<br />
+                <span style="background-color: #f67c07">Birthday:</span> March 9, 1999<br />
+                <span style="background-color: #f67c07">Zodiac Sign:</span> Pisces<br />
+                <span style="background-color: #f67c07">Height:</span> 175 cm (5&#8217;9&#8221;)<br />
+                <span style="background-color: #f67c07">Weight:</span> 58 kg (128 lbs)<br />
+                <span style="background-color: #f67c07">Blood Type:</span> B<br />
+                <span style="background-color: #f67c07">MBTI Type:</span> ENTJ-T<br />
+                <span style="background-color: #f67c07">Nationality: </span>Korean
+            </p>
+
+            <h2 id="sunwoo">Sunwoo</h2>
+            <img src="/images/Idol/TheBoyKick_Sunwoo.jpg" class="rounded mx-auto d-block" width="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #cc99ff">Stage Name:</span> Sunwoo (선우)<br />
+                <span style="background-color: #cc99ff">Birth Name:</span> Kim Sun Woo (김선우)<br />
+                <span style="background-color: #cc99ff">Position:</span> Main Rapper, Lead Dancer, Vocalist<br />
+                <span style="background-color: #cc99ff">Birthday:</span> April 12, 2000<br />
+                <span style="background-color: #cc99ff">Zodiac Sign:</span> Aries<br />
+                <span style="background-color: #cc99ff">Height:</span> 177.4 cm (5’10&#8243;)<br />
+                <span style="background-color: #cc99ff">Weight:</span> 60 kg (132 lbs)<br />
+                <span style="background-color: #cc99ff">Blood Type:</span> B<br />
+                <span style="background-color: #cc99ff">MBTI Type:</span> ENTP-A<br />
+                <span style="background-color: #cc99ff">Nationality:</span> Korean
+            </p>
+
+            <h2 id="eric">Eric</h2>
+            <img src="/images/Idol/TheBoyKick_Eric.jpg" class="rounded mx-auto d-block" width="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #ffb3f7">Stage Name:</span> Eric (에릭)<br />
+                <span style="background-color: #ffb3f7">Birth Name:</span> Son Young Jae (손영재)<br />
+                <span style="background-color: #ffb3f7">English Name:</span> Eric Son<br />
+                <span style="background-color: #ffb3f7">Position:</span> Lead Dancer, Lead Rapper, Vocalist, Maknae<br />
+                <span style="background-color: #ffb3f7">Birthday:</span> December 22, 2000<br />
+                <span style="background-color: #ffb3f7">Zodiac Sign:</span> Capricorn<br />
+                <span style="background-color: #ffb3f7">Height:</span> 174 cm (5’9&#8243;)<br />
+                <span style="background-color: #ffb3f7">Weight:</span> 56 kg (123 lbs)<br />
+                <span style="background-color: #ffb3f7">Blood Type:</span> A<br />
+                <span style="background-color: #ffb3f7">MBTI Type:</span> ENFJ-A<br />
+                <span style="background-color: #ffb3f7">Nationality:</span> Korean-American
+            </p>
+
+            <h2 style="margin-top: 75px;"><b>E X - M E M B E R</b></h2>
+            <h2 id="hwall">Hwall</h2>
+            <img src="/images/Idol/TheBoyzDreamlike_Hwall.jpg" class="rounded mx-auto d-block" width="400px">
+            <p style="text-align: center; margin-top: 15px;">
+                <span style="background-color: #252522; color: white;">Stage Name:</span> Hwall (활)<br />
+                <span style="background-color: #252522; color: white;">Birth Name:</span> Heo Hyun Joon (허현준)<br />
+                <span style="background-color: #252522; color: white;">English Name:</span> Eric Son<br />
+                <span style="background-color: #252522; color: white;">Position:</span> Lead Dancer, Lead Rapper, Vocalist<br />
+                <span style="background-color: #252522; color: white;">Birthday:</span> March 9, 2000<br />
+                <span style="background-color: #252522; color: white;">Zodiac Sign:</span> Pisces<br />
+                <span style="background-color: #252522; color: white;">Height:</span> 180 cm (5’11&#8243;)<br />
+                <span style="background-color: #252522; color: white;">Weight:</span> 56 kg (123 lbs)<br />
+                <span style="background-color: #252522; color: white;">Blood Type:</span> A<br />
+                <span style="background-color: #252522; color: white;">MBTI Type:</span> ENFP (posted on his IG story)<br />
+                <span style="background-color: #252522; color: white;">Nationality:</span> Korean-American<br>
+                <span style="background-color: #252522; color: white;">Instagram:</span> <a href="https://instagram.com/hyun.jxx0_p/" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">@hyun.jxx0_p</a><br>
+                <span style="background-color: #252522; color: white;">YouTube:</span> <a href="https://www.youtube.com/channel/UCcMIaIZiRODIA73luiAxTmw/featured)" target="_blank" rel="nofollow" style="color: #00acb1; text-decoration: none;">Hyunjun Hur</a><br>
+            </p>
+        </div>
+
+    </div>
+    <%- include('../../layouts/footer.ejs'); %>
+</body>
+</html>
